@@ -1,0 +1,544 @@
+body{
+    background-color: rgb(231, 231, 231);
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+    /*-------------------------- navbar -------------------------*/
+
+    .navbar {
+        background-color: white;
+        padding: 10px;
+    }
+
+    .navbar a {
+        display: inline;
+        color: black;
+        text-decoration: none;
+        padding: 20px;
+        margin-top: -15px;
+        float: right;
+        font-size: 25px;
+        transition: 0.5s;
+
+    }
+
+    .nav-title {
+        display: inline;
+        color: rgb(223, 19, 87);
+        font-weight: 1000;
+        font-size: 35px;
+    }
+
+    .navbar a:hover{
+        background-color: rgb(223, 19, 87);
+        color: white;
+    }
+     
+    /*-------------------------- searchbar -------------------------*/
+    form{
+        display: flex;
+        justify-content: center; 
+    }
+    .searchbar{
+        display: inline-block;
+        border: none;
+        padding: 15px;
+        width: 45%;
+        margin-top: 50px;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+
+    .submit-btn{
+        display: inline-block;
+        border: none;
+        padding: 15px;
+        margin-top: 50px;
+        font-size: 15px;
+        background-color: rgb(146, 28, 28);
+        color: white;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .submit-btn:hover{
+        background-color: rgb(223, 19, 87);
+    }
+
+  /*-------------------------- display -------------------------*/
+    .con-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: auto;
+        margin-top: 40px;
+        width: 55%;
+    }
+    
+    .disp1 { 
+        grid-area: 1 / 1 / 2 / 2;
+        background-image: url(img/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+     }
+    .disp2 { 
+        grid-area: 1 / 2 / 2 / 3;
+        background-image: url(img/titlepizza.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+     }
+
+     .disp1, .disp2{
+        padding: 45px;
+        height: 550px;
+        border-radius: 5px;
+    }
+
+    .disp1-feat{
+        color: rgb(146, 28, 28);
+    }
+
+    .disp1-title{
+        display: block;
+        color: rgb(146, 28, 28);
+        font-weight: 900;
+        font-size: 50px;
+
+    }
+
+    .disp1-text{
+        font-weight: bold;
+        font-size: medium;
+    }
+
+    .disp1-btn{
+        background-color: rgb(146, 28, 28);
+        color: white;
+        border: none;
+        border-radius: 50px; 
+        font-weight: 700;
+        font-size: 15px;
+        margin-top: 50px;
+        padding: 15px;
+        width: 150px;
+        cursor: pointer;
+        transition: 0.5s;
+
+    }
+
+    .disp1-btn:hover{
+        background-color: rgb(223, 19, 87);
+    }
+
+    /* ------------------------ All Featured Recipes -------------------- */
+
+    .rcp-title{
+        margin-top: 60px;
+        color: rgb(146, 28, 28);
+        text-align: center;
+        font-size: 45px;
+    }
+    
+    .leline{
+        width: 75%;
+        border: none;
+        background-color: black;
+        background-color: rgb(146, 28, 28);
+        height: 3px;
+    }
+
+    .Recipes-Home {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        font-size: 14px;
+        width: 75%;
+        margin: auto;
+        margin-top: 50px;
+        }
+
+         .Recipes-Home div{
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 3px;
+            margin: auto;
+         }
+
+         .Recipes-Home img {
+            max-width: 100%;
+            width: 450px;
+            height: 300px;
+          }
+
+         .Recipes-Home h2 {
+            color:rgb(146, 28, 28);
+            margin-bottom: 5px;
+          }
+
+          .Recipes-Home p{
+            font-weight: 700;
+          }
+
+          .rcptitle{
+            font-size: 30px;
+          }
+
+          .rcpbtn{
+            border: none;
+            background-color:rgb(146, 28, 28);
+            color: white;
+            padding: 15px;
+            font-weight: 800;
+            border-radius: 50px;
+            margin-top: 20px;
+            transition: 0.5s;
+            cursor: pointer;
+          }
+
+          .rcpbtn:hover{
+            background-color: rgb(223, 19, 87);
+          }
+
+          .morebtn{
+            display: block;
+            border: none;
+            border-radius: 5px;
+            margin: auto;
+            background-color:rgb(146, 28, 28);
+            color: white;
+            padding: 15px;
+            width: 50%;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            cursor: pointer;
+            transition: 0.5s;
+            text-decoration: none;
+          }
+
+          .morebtn:hover{
+            background-color: rgb(223, 19, 87);
+            text-decoration: none;
+          }
+
+/*----------------------------- footer -----------------------------*/
+
+footer{
+	padding: 40px 0;
+	background-color: #14181b;
+    margin-top: 100px;
+}
+
+footer .social{
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+footer .social a{
+	font-size: 24;
+	color: inherit;
+	border: 1px solid #ffffff;
+	width: 40px;
+	height: 40px;
+	line-height: 38px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	margin: 0 8px;
+	opacity: 0.75; 
+}
+
+footer .social a:hover {
+	opacity: 0.9;
+}
+
+footer ul {
+	margin-top: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 18px;
+	line-height: 1.6;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+footer ul li a {
+	color: rgb(223, 19, 87);;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+footer ul li {
+	display: inline-block;
+	padding: 0 15px;
+	font-weight: 550;
+}
+
+footer ul li a:hover {
+	opacity: 1;
+}
+
+footer, .copyright{
+	margin-top: 15px;
+	text-align: center;
+	font-size: 13px;
+	color: #aaa;
+}
+
+.fab.fa-instagram{
+	color: #FD1D1D;
+}
+
+.fab.fa-snapchat{
+	color: #FFFC00;
+}
+
+.fab.fa-twitter{
+	color:#1DA1F2;
+}
+
+.fab.fa-facebook-f{
+	color:#4267B2;
+    
+}
+
+/*----------------------------- MainCourse -----------------------------*/
+
+.rcp-con1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 75%;
+    margin: auto;
+}
+
+.rcp1, .rcp2, .rcp3, .rcp4, .rcp5 {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.rcp-con1 img {
+    width: 350px;
+    height: 250px;
+    margin-right: 20px;
+}
+
+.rcpord {
+    flex: 1;
+}
+
+.rcptitle, .rcptext {
+    margin: 0;
+}
+
+.rcpbtn1 {
+    background-color:rgb(146, 28, 28);
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: medium;
+    margin-top: 100px;
+    float: right;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.rcpbtn1:hover{
+    background-color: rgb(223, 19, 87);
+}
+
+.morebtn {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.bcg{
+    background-image: url(background/cook.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*----------------------------- Recipe base -----------------------------*/
+
+.Rcpbase {
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+}
+
+
+.c1 { 
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.c1 h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+
+.c1 ol {
+    margin: 0;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.c1 ol li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555; 
+}
+
+.c1 p {
+    font-size: 18px;
+    line-height: 1.5; 
+    margin-bottom: 20px;
+    color: #666; 
+}
+
+
+.c1 hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc; 
+}
+
+
+.c1 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+.c1 ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.c1 ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555; 
+}
+
+.c2 { 
+    background-image: url(https://placehold.co/700x900);
+    grid-area: 1 / 2 / 2 / 3;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#img1{
+    background-image: url(img/margrecipe.png);
+}
+
+#img2{
+    background-image: url(img/pepperorcp.jpg);
+}
+
+
+#img3{
+    background-image: url(img/mushroomrcp.jpg);
+}
+
+#img4{
+    background-image: url(img/carbonara.rcp.jpg);
+}
+
+#img5{
+    background-image: url(img/pastarcp.webp);
+}
+
+#img6{
+    background-image: url(img/lasagnarcp.webp);
+}
+
+#img7{
+    background-image: url(Maincourseimg/steakrcp.webp);
+}
+
+#img8{
+    background-image: url(Maincourseimg/bakedpotatorcp.jpg);
+}
+
+#img9{
+    background-image: url(Maincourseimg/omlet.jpg);
+}
+
+#img10{
+    background-image: url(Maincourseimg/Csoup.jpg);
+}
+
+#img11{
+    background-image: url(Maincourseimg/Bsoup.jpg);
+}
+
+#img12{
+    background-image: url(img/que.jpg);
+}
+
+#img13{
+    background-image: url(img/minimeatballs3.jpg);
+}
+
+#img14{
+    background-image: url(img/shrimpie.jpg);
+}
+
+#img15{
+    background-image: url(img/bruschetta-with-garlic-crostini-11-2.webp);
+}
+
+#img16{
+    background-image: url(img/SpringRollsimg.jpg);
+}
+
+#img17{
+    background-image: url(img/cheesecake.webp);
+}
+
+#img18{
+    background-image: url(img/CrèmeBrûlée.jpg);
+}
+
+#img19{
+    background-image: url(img/Macarons.jpg);
+}
+
+#img20{
+    background-image: url(img/cookie.jpg);
+}
+
+#img21{
+    background-image: url(img/cupcake.webp);
+}

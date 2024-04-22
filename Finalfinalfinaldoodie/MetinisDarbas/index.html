@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Cook Book</title>
+</head>
+<body >
+
+    <nav id="navbar" class="navbar">
+        <h1 class="nav-title">cookbook.com</h1>
+        <a href="Desserts.html">Desserts</a>
+        <a href="Apetisers.html">Appetisers</a>
+        <a href="MainCourse.html">Main Course</a>
+        <a href="index.html">Home</a>
+    </nav>
+    
+    <script>
+        window.onload = function() {
+            window.onscroll = function() { myFunction() };
+    
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+    
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        };
+    </script>
+
+        <!-- searchbar -->
+
+        <form>
+            <input type="search" id="gsearch" name="gsearch" class="searchbar" placeholder="search recipes...">
+            <input type="submit" class="submit-btn">
+          </form>
+
+        <!-- Themed recipes -->
+
+        <div class="con-1">
+            <div class="disp1">
+                <h2 class="disp1-feat">Featured Collection</h2>
+                <h1 class="disp1-title">ITALIAN WEEK RECIPES!</h1>
+                <p class="disp1-text">Welcome to "Italian Week Recipes"! Here you'll find a plethora of authentic Italian dishes that will transport your taste buds straight to Italy. On our site, you'll discover a variety of recipes, from traditional pasta dishes to delicious pizzas, sauces, and desserts. Let us share with you the secrets of Italian flavors and enrich your kitchen with Italian aromas and tastes! Buon appetito!</p>
+                <a href="MainCourse.html"><button class="disp1-btn">View More!</button></a>
+            </div>
+            <div class="disp2"></div>
+            </div>
+    
+        <!-- All featured recipes -->
+
+        <h1 class="rcp-title">All Featured Recipes</h1>
+        <hr class="leline">
+        <div class="Recipes-Home">
+            <div class="div1">
+                <img src="img/margherita.jpg">
+                <h2>Margherita Pizza</h2> 
+                <p>Margherita pizza is a classic Italian pizza topped with simple yet flavorful ingredients: tomato sauce, fresh mozzarella cheese, basil leaves, and a drizzle of olive oil.</p>
+                <a href="recipe.html"><button class="rcpbtn">Start Cooking!</button></a>
+            </div>
+            <div class="div2">
+                <img src="img/peperoni.jpg">
+                <h2>Pepperoni Pizza</h2> 
+                <p>Pepperoni pizza is a beloved classic featuring a thin or thick crust topped with tomato sauce, melted mozzarella cheese, and slices of spicy pepperoni.</p>
+                <a href="recipe2.html"><button class="rcpbtn">Start Cooking!</button></a> 
+            </div>
+            <div class="div3">
+                <img src="img/mushroom.png">
+                <h2>Mushroom Pizza</h2> 
+                <p>Mushroom pizza is a delicious variation of the classic pizza, featuring a crust topped with tomato sauce, melted mozzarella cheese, and sliced mushrooms.</p>
+                <a href="recipe3.html"><button class="rcpbtn">Start Cooking!</button></a>
+            </div>
+            <div class="div4">
+                <img src="img/carbonara.jpg">
+                <h2>Carbonara</h2> 
+                <p>Carbonara is a classic Italian pasta dish known for its rich and creamy sauce. It's made with spaghetti or another long pasta, eggs, grated cheese, pancetta or guanciale, and black pepper.</p>
+                <a href="recipe4.html"><button class="rcpbtn">Start Cooking!</button></a>   
+            </div>
+            <div class="div5">
+                <img src="img/pastarcp.webp">
+                <h2 >Pasta</h2> 
+                <p>Pasta is a staple food in Italian cuisine and enjoyed worldwide for its versatility and delicious taste. It's made from durum wheat flour and water, shaped into various forms such as spaghetti, penne, fusilli, or lasagna sheets, and cooked in boiling water until tender.</p>
+                <a href="recipe5.html"><button class="rcpbtn">Start Cooking!</button></a>
+            </div>
+            <div class="div6">
+                <img src="img/lasagna.jpg">
+                <h2>Bologna lasagna</h2> 
+                <p>Bologna lasagna is a hearty and comforting dish featuring layers of lasagna noodles, rich Bolognese sauce, creamy béchamel sauce, and melted cheese.</p>
+                <a href="recipe6.html"><button class="rcpbtn">Start Cooking!</button></a>   
+            </div>
+            </div>
+
+            <a href="MainCourse.html"><button class="morebtn"> View more! </button> </a>
+
+
+            <footer>
+                <div class="social">
+                    <a class="insta" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="snap" href="#"><i class="fab fa-snapchat"></i></a>
+                    <a class="tit" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="face" href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+        
+                <ul class="list">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+        
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+        
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+        
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+                <p class="copyright"></p>
+                Big Nuts United @ 2024
+            </footer>
+
+</body>
+</html>
